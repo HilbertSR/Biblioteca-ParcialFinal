@@ -135,40 +135,40 @@ Video demostrativo: [Ver video](evidencias/Video_Demostrativo.mp4)
 ### Prueba 1: Registro
 ![Registro](evidencias/Registro.png)
 
-[Qué libro agregaste y qué resultado se vio.]
+Se agregó el libro La Isla del Tesoro y se guardo correctamente.
 
 ### Prueba 2: Consulta
 ![Consulta](evidencias/Consulta.png)
 
-[Qué se muestra en la lista.]
+En la lista aparece el libro recién guardado. 
 
 ### Prueba 3: Actualización
 ![Actualización](evidencias/Actualizacion.png)
 
-[Qué libro modificaste, qué cambiaste y el resultado.]
+Modifique el estado del libro La Isla del Tesoro, paso de leído a pendiente.
 
 ### Prueba 4: Eliminación
 ![Eliminación](evidencias/Borrar.png)
 
-[Qué libro eliminaste y que ya no aparece.]
+Se eliminó La Isla del Tesoro, ya no aparece en la lista.
 
 ### Prueba 5: Validación
 ![Validación del nombre](evidencias/Validacion_nombre.png)
 
-[Se intentó guardar con el nombre vacío. Mensaje mostrado: ...]
+Se intentó guardar con el nombre vacío. Mensaje mostrado: El nombre no puede estar vacio.
 
 ![Validación del autor](evidencias/Validacion_autor.png)
 
-[Se intentó guardar con el autor vacío. Mensaje mostrado: ...]
+Se intentó guardar con el autor vacío. Mensaje mostrado: El autor no puede estar vacio.
 
 ### Prueba 6: Persistencia
 ![Antes de cerrar](evidencias/Persistencia_1.png)
 
-[Libros registrados antes de cerrar la aplicación.]
+Se guardaron los libros La Isla del Tesoro, Cien Años de Soledad y No Tengo Boca y Debo Gritar antes de cerrar la aplicación.
 
 ![Después de volver a abrir](evidencias/Persistencia_2.png)
 
-[Los mismos libros aparecen tras abrir de nuevo.]
+Los mismos libros aparecen tras abrir de nuevo.
 
 ## 9. Problemas encontrados y soluciones
 
