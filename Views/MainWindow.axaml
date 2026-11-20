@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="900"
+        d:DesignHeight="600"
+        x:Class="parcialFinal.MainWindow"
+        Title="Biblioteca"
+        Width="900"
+        Height="600">
+
+    <ScrollViewer>
+        <StackPanel Margin="25" Spacing="15">
+
+            <TextBlock Text="Biblioteca"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Nombre del libro"/>
+            <TextBox x:Name="TxtNombre"
+                     Watermark="Escribe el nombre del libro"/>
+
+            <TextBlock Text="Autor"/>
+            <TextBox x:Name="TxtAutor"
+                     Watermark="Escribe el autor del libro"/>
+
+            <TextBlock Text="Estado de lectura"/>
+            <ComboBox x:Name="CmbEstado"
+                      Width="200"
+                      HorizontalAlignment="Left"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Pendiente"/>
+                <ComboBoxItem Content="Leyendo"/>
+                <ComboBoxItem Content="Leido"/>
+            </ComboBox>
+
+            <WrapPanel HorizontalAlignment="Center" ItemSpacing="10">
+                <Button x:Name="BtnAgregar" Content="Agregar Libro" Click="Boton_Agregar"/>
+                <Button x:Name="BtnActualizar" Content="Actualizar Libro" Click="Boton_Actualizar"/>
+                <Button x:Name="BtnBorrar" Content="Borrar Libro" Click="Boton_Borrar"/>
+                <Button x:Name="BtnLimpiar" Content="Limpiar" Click="Boton_Limpiar"/>
+            </WrapPanel>
+
+            <TextBlock x:Name="TxtMensaje"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Libros registrados"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+
+            <ListBox x:Name="LstLibros"
+                     Height="250"
+                     SelectionChanged="LstLibros_SelectionChanged"/>
+
+        </StackPanel>
+    </ScrollViewer>
+
+</Window>
